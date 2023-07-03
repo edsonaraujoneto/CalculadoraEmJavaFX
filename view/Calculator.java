@@ -7,12 +7,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Calculadora extends Application{
+public class Calculator extends Application{
     private static Scene scene1;
 
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root1 = FXMLLoader.load (getClass().getResource("/fxml/TelaCalculadora.fxml"));
+        Parent root1 = FXMLLoader.load (getClass().getResource("/fxml/ScreenCalculator.fxml"));
         scene1 = new Scene(root1);
 
         stage.setTitle("Calculadora");
