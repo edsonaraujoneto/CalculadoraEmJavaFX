@@ -5,13 +5,15 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="266.0" style="-fx-background-color: #12a8e4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controllerScreenCalculator">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="266.0" style="-fx-background-color: #3c3d3d;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controllerScreenCalculator">
    <children>
       <AnchorPane layoutY="54.0" prefHeight="307.0" prefWidth="266.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
          <children>
@@ -19,14 +21,21 @@
                <children>
                   <HBox prefHeight="46.0" prefWidth="287.0">
                      <children>
-                        <Button fx:id="buttonClean" mnemonicParsing="false" onAction="#handleButtonClean" prefHeight="34.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="C" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="buttonDeleteKey" mnemonicParsing="false" onAction="#handleButtonDeleteKey" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="&lt;--" textFill="WHITE">
+                        <Button fx:id="buttonDeleteKey" mnemonicParsing="false" onAction="#handleButtonDeleteKey" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fxml.images/pngwing.com.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="buttonClean" mnemonicParsing="false" onAction="#handleButtonClean" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="C" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
                            </font>
                            <HBox.margin>
                               <Insets left="5.0" />
@@ -40,7 +49,7 @@
                               <Insets left="5.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="buttonDivision" mnemonicParsing="false" onAction="#handleButtonDivision" prefHeight="46.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="/" textFill="WHITE">
+                        <Button fx:id="buttonDivision" mnemonicParsing="false" onAction="#handleButtonDivision" prefHeight="46.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="÷" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
@@ -76,9 +85,9 @@
                               <Insets left="5.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="buttonMultiplication" mnemonicParsing="false" onAction="#handleButtonMultiplication" prefHeight="46.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="*" textFill="WHITE">
+                        <Button fx:id="buttonMultiplication" mnemonicParsing="false" onAction="#handleButtonMultiplication" prefHeight="46.0" prefWidth="55.0" style="-fx-background-color: #8c8e8f;" text="x" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font size="24.0" />
                            </font>
                            <HBox.margin>
                               <Insets left="5.0" />

@@ -76,10 +76,11 @@ public class controllerScreenCalculator implements Initializable {
     @FXML
     private TextField textFieldSpaceBar;
     
-    Calculation calculation = new Calculation();
+    private Calculation calculation = new Calculation();
     
-    double number,answer;
-    int type;
+    private double number,answer;
+    private int type;
+    private int n = 0;
     
     public void calcular() {
         labelHistoric.setText(labelHistoric.getText()+textFieldSpaceBar.getText());
@@ -164,11 +165,17 @@ public class controllerScreenCalculator implements Initializable {
     
     @FXML
     public void handleButtonBracket(ActionEvent event) {
-
+        /*if ( n % 2 == 0) {
+            textFieldSpaceBar.setText(textFieldSpaceBar.getText()+"(");
+        }
+        else {
+            textFieldSpaceBar.setText(textFieldSpaceBar.getText()+")");
+        }
+        ++n;*/
     }
 
     @FXML
-    public void handleButtonAddition(ActionEvent event) {
+    public void handleButtonAddition(ActionEvent event) { 
         labelHistoric.setText("");
         number = Double.parseDouble(textFieldSpaceBar.getText());
         type = 1;
