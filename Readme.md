@@ -1,7 +1,7 @@
-<h1>Calculadora simples feita em JavaFX</h1>
+# Sobre
 
-Simples calculadora feita em JavaFX com objetivos de estudos. <br>
+Simples calculadora feita em JavaFX com objetivos de estudos.
 
-Todos os códigos aqui postados são de autoria de <strong>Edson Araujo de Souza Neto</strong>.
+Todos os códigos aqui postados são de autoria de @edsonaraujoneto
 
 
